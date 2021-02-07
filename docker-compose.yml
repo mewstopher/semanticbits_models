@@ -1,0 +1,16 @@
+version: '3.1'
+services:
+    db:
+        build: .
+        restart: always
+        ports:
+            - 5432:5432
+        container_name: sb_postgres
+    adminer:
+        image: adminer:latest
+        container_name: sb_adminer
+        restart: always
+        ports:
+            - 8080:8080
+        depends_on:
+          - db
