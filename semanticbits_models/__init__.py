@@ -19,6 +19,6 @@ class Health(Base):
     raw_value = Column('raw_value', Float)
     confidence_interval_lower_bound = Column('confidence_interval_lower_bound', Float)
     confidence_interval_upper_bound = Column('confidence_interval_upper_bound', Float)
-    date_release_year = Column('date_release_year', Integer)
+    data_release_year = Column('data_release_year', Integer)
     fipscode = Column('fipscode', Integer)
     dt_updated = Column('dt_updated', DateTime, server_default=func.now())
