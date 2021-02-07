@@ -32,7 +32,7 @@ def upgrade():
     sa.Column('raw_value', sa.Float(), nullable=True),
     sa.Column('confidence_interval_lower_bound', sa.Float(), nullable=True),
     sa.Column('confidence_interval_upper_bound', sa.Float(), nullable=True),
-    sa.Column('date_release_year', sa.Integer(), nullable=True),
+    sa.Column('data_release_year', sa.Integer(), nullable=True),
     sa.Column('fipscode', sa.Integer(), nullable=True),
     sa.Column('dt_updated', sa.DateTime(), server_default=sa.text('now()'), nullable=True),
     sa.PrimaryKeyConstraint('id')
